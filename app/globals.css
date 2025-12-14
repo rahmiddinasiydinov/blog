@@ -1,1 +1,235 @@
 @import "tailwindcss";
+/* @import "tw-animate-css"; */
+
+@custom-variant dark (&:is(.dark *));
+
+/* ================================================
+   DESIGN SYSTEM - Interstellar Dark Theme
+   ================================================ */
+
+:root {
+  --radius: 0.625rem;
+  
+  /* Interstellar-inspired dark theme - amber/gold accents */
+  --background: #030303;
+  --foreground: #e8e6e3;
+  --card: #0a0908;
+  --card-foreground: #e8e6e3;
+  --popover: #0a0908;
+  --popover-foreground: #e8e6e3;
+  --primary: #d4a574;
+  --primary-foreground: #030303;
+  --secondary: #1a1814;
+  --secondary-foreground: #e8e6e3;
+  --muted: #1a1814;
+  --muted-foreground: #8a8580;
+  --accent: #b8860b;
+  --accent-foreground: #030303;
+  --destructive: #8b0000;
+  --border: rgba(212, 165, 116, 0.15);
+  --input: rgba(212, 165, 116, 0.1);
+  --ring: #d4a574;
+  --chart-1: #d4a574;
+  --chart-2: #b8860b;
+  --chart-3: #cd853f;
+  --chart-4: #daa520;
+  --chart-5: #c19a6b;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Global Button Styles */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Icon-only buttons */
+  .icon-btn {
+    padding: 0.875rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@layer utilities {
+  /* Animation Utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Text gradient utility - Interstellar amber */
+  .text-gradient {
+    background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Content centering utility */
+  .content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Keyframes must be global or within specific contexts, typically global is fine unless scoped */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(212, 165, 116, 0.6);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom scrollbar - often kept global */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1814;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4a574;
+}
+
+/* Link styles - check if these should be base or components. 
+   Putting in base for now to match previous global behavior but carefully.*/
+@layer base {
+  a {
+    /* Removed padding from base 'a' tag to avoid messing up all links. 
+       If this was intended for nav links, it should be a class. 
+       Keeping it but moving to sensible defaults if needed. 
+       The user complained about padding issues, resetting this might help. */
+    /* padding: 8px 16px; <--- This is likely DANGEROUS for global links */
+  }
+
+  /* Only specific links should probably have these hover effects */
+  /* a:hover { ... } */
+}
