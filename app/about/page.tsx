@@ -114,7 +114,7 @@ export default function AboutPage() {
                                 Download CV
                             </a>
                             <a
-                                href="https://t.me/programmerTeacher"
+                                href="mailto:rahmiddinasiydinov@gmail.com"
                                 className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-amber-100 font-semibold rounded-xl border border-amber-700/40 transition-all duration-300 hover:bg-amber-900/20 hover:border-amber-500/60"
                             >
                                 Get in Touch
