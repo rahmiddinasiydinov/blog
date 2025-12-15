@@ -107,14 +107,14 @@ export default function AboutPage() {
 
                         <div className="flex gap-4 justify-center mt-10 flex-wrap">
                             <a
-                                href="/cv.pdf"
+                                href="/rakhmiddin_cv.pdf"
                                 download
                                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-800 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(212,165,116,0.4)]"
                             >
                                 Download CV
                             </a>
                             <a
-                                href="mailto:rahmiddinasiydinov@gmail.com"
+                                href="https://t.me/programmerTeacher"
                                 className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-amber-100 font-semibold rounded-xl border border-amber-700/40 transition-all duration-300 hover:bg-amber-900/20 hover:border-amber-500/60"
                             >
                                 Get in Touch

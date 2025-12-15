@@ -21,71 +21,54 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    slug: "project-one",
-    title: "Project One",
-    shortDescription: "A modern web application built with cutting-edge technologies for seamless user experience.",
-    fullDescription: `This project showcases modern web development practices using React and Next.js. 
-    
-The application features:
-- Responsive design that works across all devices
-- Real-time data synchronization
-- Optimized performance with lazy loading
-- Intuitive user interface with smooth animations
-
-The main challenge was implementing a scalable architecture that could handle high traffic while maintaining fast response times.`,
-    image: "/images/project-1.jpg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    slug: "tezyoz",
+    title: "TezYoz",
+    shortDescription: "An online typing practice platform with real-time stats, customizable modes, and multi-language support.",
+    fullDescription: `An online typing practice platform that allows both signed-in and guest users to take typing tests. Features include real-time typing stats tracking, customizable test modes (time or word-based), secure third-party API integration for saving results, three interface languages, and six supported typing languages.`,
+    image: "/images/tezyoz.png",
+    technologies: ["HTML Basics + CSS", "Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn/UI", "Node.js", "Nest.js", "Prisma", "MongoDB"],
     links: {
-      demo: "https://demo.example.com",
-      github: "https://github.com/username/project-one",
-      live: "https://project-one.example.com",
+      live: "https://tezyoz.uz", 
     },
     featured: true,
-    myRole: "Lead Frontend Developer",
-    client: "TechSolutions Inc.",
+    myRole: "Fullstack Engineer",
+    client: "tezyoz.uz", 
     keyResponsibilities: [
-      "Designed and implemented the user interface using React and Tailwind CSS",
-      "Optimized application performance achieving a 98/100 Lighthouse score",
-      "Mentored junior developers and conducted code reviews",
-      "Integrated RESTful APIs for real-time data fetching"
+      "Enabled non-signed-in users to type and see results while maintaining anonymity and no saved records, improving accessibility and engagement.",
+      "Created a typing engine to track users' typing stats, leveraging AI-assisted algorithms during development.",
+      "Automated test data saving by integrating with a backend API, ensuring reliable storage and seamless user experience.",
+      "Secured all third-party communications using Next.js routes and server actions, protecting sensitive user data.",
+      "Developed customizable typing modes with various duration, word counts and different texts in 6 languages, enhancing flexibility and user personalization."
     ],
     achievements: [
-      "Reduced page load time by 40%",
-      "Successfully launched MVP 2 weeks ahead of schedule",
-      "Implemented a custom design system used across 3 other internal projects"
+      "Boosted SEO performance by ~35% by leveraging Next.js server-side rendering and optimized routing, improving site visibility compared to traditional client-rendered sites.",
+      "Delivered 10+ core features within just 1 month, accelerating the platform's launch and early user adoption.",
+      "Enhanced user personalization by adding customizable test modes with multiple durations, word counts, and 6 language options, increasing user engagement and retention."
     ]
   },
   {
     id: "2",
-    slug: "project-two",
-    title: "Project Two",
-    shortDescription: "An innovative mobile-first solution designed to streamline workflow and boost productivity.",
-    fullDescription: `A comprehensive productivity application that helps teams collaborate more effectively.
-
-Key features include:
-- Task management with priority levels
-- Team collaboration tools
-- Progress tracking and analytics
-- Integration with popular third-party services
-
-This project demonstrates expertise in building complex, feature-rich applications.`,
-    image: "/images/project-2.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
+    slug: "examy-me",
+    title: "Examy.me",
+    shortDescription: "An IELTS mock test platform with interactive sections, AI-generated voices, and secure data storage.",
+    fullDescription: `An IELTS mock test platform with interactive Listening, Reading, Writing, and Speaking sections, featuring AI-generated voices and secure MongoDB data storage.`,
+    image: "/images/examy.png",
+    technologies: ["HTML Basics + CSS", "React", "TypeScript", "Node.js", "Express.js", "MongoDB"],
     links: {
-      github: "https://github.com/username/project-two",
+      live: "https://examy.me",
     },
     featured: true,
-    myRole: "Full Stack Developer",
-    client: "ProductivityPlus",
+    myRole: "Fullstack Engineer",
+    client: "Examy.me",
     keyResponsibilities: [
-      "Built the backend REST API using Node.js and Express",
-      "Implemented real-time collaboration features using Socket.io",
-      "Designed the database schema in MongoDB for efficient data retrieval"
+      "Adjusted and created UI components for Listening, Reading, Writing, and Speaking sections, improving test usability.",
+      "Generated voices for speaking questions using AI, enhancing interactive test experience.",
+      "Stored all test data in MongoDB via the UI, ensuring accurate and organized data management."
     ],
     achievements: [
-      "Scaled the application to support 10,000+ concurrent users",
-      "Implemented an automated testing pipeline reducing bug reports by 60%",
-      "Developed a robust plugin system for third-party integrations"
+      "Completed test implementation 33% ahead of deadline, delivering in 2 days instead of the planned 3.",
+      "Enhanced test usability with robust and intuitive UI for Listening, Reading, Writing, and Speaking sections.",
+      "Implemented reliable data management by integrating structured MongoDB storage for seamless test data handling."
     ]
   },
   {
@@ -106,8 +89,7 @@ The site serves as a central hub for my professional identity and a playground f
     image: "/images/blog.png",
     technologies: ["Next.js 15", "React 19", "Tailwind CSS v4", "TypeScript"],
     links: {
-      live: "https://rakhmiddin.uz",
-      github: "https://github.com/rahmiddin/portfolio-v2"
+      live: "https://rakhmiddin.uz"
     },
     featured: true,
     myRole: "Creator & Lead Developer",
