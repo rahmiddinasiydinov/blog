@@ -17,7 +17,8 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed w-full flex justify-center right-0 z-50 py-4 bg-[#030303]/80 backdrop-blur-xl border-b border-amber-900/20">
+        <nav className="fixed w-full flex justify-center right-0 z-50 py-4">
+            <div className="absolute inset-0 bg-[#030303]/80 backdrop-blur-xl border-b border-amber-900/20 -z-10" />
             <div className="container flex items-center justify-between max-w-[1200px] px-6">
                 <Link href="/" className="flex items-center font-['Outfit'] text-[1.75rem] font-bold">
                     <span className="text-white">R</span>
@@ -47,7 +48,7 @@ export default function Navbar() {
                 </ul>
 
                 {/* Mobile Menu Button */}
-                {/* <button
+                <button
                     className="md:hidden flex flex-col justify-center items-center gap-[5px] w-10 h-10 bg-transparent border-none"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     aria-label="Toggle menu"
@@ -64,11 +65,11 @@ export default function Navbar() {
                         "block w-6 h-0.5 bg-white rounded-full transition-all duration-250",
                         isMenuOpen && "-translate-y-[7px] -rotate-45"
                     )} />
-                </button> */}
+                </button>
 
                 {/* Mobile Navigation */}
                 <div className={cn(
-                    "fixed md:hidden top-[60px] left-0 right-0 bottom-0 bg-[#030303]/98 backdrop-blur-xl p-8 transition-all duration-250",
+                    "fixed md:hidden top-[60px] left-0 right-0 bottom-0 bg-[#030303] backdrop-blur-xl p-8 transition-all duration-350 overflow-y-auto",
                     isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
                 )}>
                     <ul className="flex flex-col gap-6 pt-8">
