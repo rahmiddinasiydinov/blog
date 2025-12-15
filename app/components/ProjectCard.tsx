@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ProjectCardProps {
     slug: string;
@@ -20,7 +21,7 @@ export default function ProjectCard({
         <article className="group bg-[#0a0908] border border-amber-900/20 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-amber-600/50 hover:shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_20px_rgba(212,165,116,0.15)]">
             <div className="relative w-full aspect-[16/10] overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a1814] to-[#0a0908]">
-                    <span className="text-5xl opacity-50">🚀</span>
+                    {image ? <Image src={image} alt={title} fill className="object-cover" /> : <span className="text-5xl opacity-50">🚀</span>}
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030303]/90 to-transparent" />
             </div>

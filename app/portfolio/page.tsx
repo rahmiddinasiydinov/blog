@@ -27,7 +27,7 @@ export default function PortfolioPage() {
                     {projects.map((project, index) => (
                         <div
                             key={project.id}
-                            className="opacity-0 animate-in fade-in slide-in-from-bottom-8 duration-600"
+                            className="animate-in fade-in slide-in-from-bottom-8 duration-600"
                             style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
                         >
                             <ProjectCard
