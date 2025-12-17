@@ -98,11 +98,8 @@ export default function AboutPage() {
                             <a href="tel:+998947076772" className="hover:text-amber-400 transition-colors">+998947076772</a>
                         </div>
                         <p className="text-lg text-zinc-400 leading-relaxed mb-4 text-justify">
-                            Experienced Software Engineer with over 3 years specializing in Fullstack Web
-                            Development. Dual degree in Marketing and Software Engineering, combining
-                            technical skills with market insights. Interested in Product Management, aiming to
-                            drive innovation and user engagement. Proven ability to collaborate with cross-functional
-                            teams to deliver high-quality software solutions.
+                            A developer with strong background in fullstack web application development, looking for new opportunities to create impact and make a difference.
+
                         </p>
 
                         <div className="flex gap-4 justify-center mt-10 flex-wrap">
