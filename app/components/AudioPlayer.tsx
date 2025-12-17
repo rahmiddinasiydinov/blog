@@ -48,7 +48,7 @@ export default function AudioPlayer({
                 {showPrompt && (
                     <button
                         onClick={togglePlay}
-                        className="flex items-center gap-2 px-6 py-3 bg-amber-900/20 backdrop-blur-xl border border-amber-700/30 rounded-full cursor-pointer animate-pulse hover:bg-amber-900/30 hover:scale-[1.02] transition-all duration-1000"
+                        className="flex items-center gap-2 px-6 py-3 bg-amber-900/20 backdrop-blur-xl border border-amber-700/30 rounded-full cursor-pointer animate-pulse hover:bg-amber-900/30 hover:scale-[1.02] transition-all duration-2000"
                     >
                         <span className="text-xl">🎵</span>
                         <span className="text-amber-100 text-sm font-medium whitespace-nowrap">
@@ -59,7 +59,7 @@ export default function AudioPlayer({
 
                 <button
                     className={cn(
-                        "flex items-center justify-center w-14 h-14 rounded-full border cursor-pointer transition-all duration-250 hover:scale-105",
+                        "flex items-center justify-center w-14 h-14 rounded-full border cursor-pointer transition-all duration-100 hover:scale-105",
                         isPlaying
                             ? "bg-gradient-to-r from-amber-600 to-amber-800 border-transparent shadow-[0_0_20px_rgba(212,165,116,0.4)]"
                             : "bg-amber-900/20 backdrop-blur-xl border-amber-700/30 hover:border-amber-500"
