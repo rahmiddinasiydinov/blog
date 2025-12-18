@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Rakhmiddin Asiydinov",
   },
   description: "Welcome to Rakhmiddin's personal portfolio - Software Developer, creative thinker, and problem solver.",
-  keywords: ["Rakhmiddin", "Rahmiddin", "Rahmiddin Asiydinov", "Asiydinov", "Portfolio", "Fullstack Developer", "Software Engineer", "Web Development", "React", "Next.js", "Uzbekistan"],
+  keywords: ["Rakhmiddin", "Rahmiddin", "Rahmiddin Asiydinov", "Asiydinov", "Portfolio", "Fullstack Developer", "Software Engineer", "Web Development", "React", "Next.js", "Uzbekistan", "TezYoz", "Examy.me", "Sandiq", "Frontend Developer", "Backend Developer", "Uzbekistan Developer"],
   authors: [{ name: "Rakhmiddin Asiydinov" }],
   creator: "Rakhmiddin Asiydinov",
   openGraph: {
