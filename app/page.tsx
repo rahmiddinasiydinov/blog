@@ -33,7 +33,7 @@ export default function Home() {
                 View My Work
               </Link>
               <Link
-                href="/about"
+                href="/cv"
                 className="inline-flex items-center justify-center px-10 py-5 bg-transparent text-amber-100 font-semibold text-base rounded-xl border border-amber-700/40 transition-all duration-300 hover:bg-amber-900/20 hover:border-amber-500/60"
               >
                 About Me

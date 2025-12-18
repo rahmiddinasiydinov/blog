@@ -91,7 +91,7 @@ export default function AboutPage() {
                         <h1 className="font-['Outfit'] text-[clamp(2rem,5vw,3rem)] font-bold text-amber-50 mb-2">
                             RAHMIDDIN ASIYDINOV
                         </h1>
-                        <h2 className="text-xl text-amber-500 font-medium mb-6">FullStack Web Developer (JavaScript)</h2>
+                        <h2 className="text-xl text-amber-500 font-medium mb-6">FullStack Software Engineer (JavaScript)</h2>
                         <div className="flex justify-center gap-6 text-zinc-400 mb-8 flex-wrap">
                             <a href="mailto:rahmiddinasiydinov@gmail.com" className="hover:text-amber-400 transition-colors">rahmiddinasiydinov@gmail.com</a>
                             <span className="text-zinc-600">|</span>

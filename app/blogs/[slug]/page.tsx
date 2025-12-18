@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         </div>
                         <div>
                             <p className="text-amber-50 font-medium">Rakhmiddin Asiydinov</p>
-                            <p className="text-sm text-zinc-500">Frontend Engineer</p>
+                            <p className="text-sm text-zinc-500">FullStack Software Engineer</p>
                         </div>
                     </div>
 
