@@ -1,14 +1,23 @@
 import { MetadataRoute } from 'next'
 import { getAllProjects } from './data/projects'
+import { getAllCertifications } from './data/certifications'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const projects = getAllProjects()
+  const certifications = getAllCertifications()
 
   const projectUrls = projects.map((project) => ({
     url: `https://rakhmiddin.uz/portfolio/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+  }))
+
+  const certificationUrls = certifications.map((cert) => ({
+    url: `https://rakhmiddin.uz/certifications/${cert.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
   }))
 
   return [
@@ -31,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://rakhmiddin.uz/certifications',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://rakhmiddin.uz/blogs',
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -43,5 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...projectUrls,
+    ...certificationUrls,
   ]
 }
+
